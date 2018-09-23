@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de"> <!--optional aber best practice -->
+    <head>
+      <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="script.js"></script>
+        <!-- 
+	<link rel="stylesheet" href="normalize.css">
+	-->
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+        <title>Forum</title>
+    
+    </head>
+    <body id="forum">
+      <header> 
+       <!--Überschrift meist (Blogname usw)-->  
+        <h1> <img src="img/Arg1.png" alt="Argentinien"> Forum
+             <img src="img/FCBLogo1.jpg" alt="Barcelona">
+        </h1>
+          <nav>
+       <!--optional kann die nav im header platziert werden--> 
+        <ul>
+          		<li><a href="index.html"> Startseite </a> </li>
+          		<li><a href="MessiPrivatLeben.html"> Privatleben </a></li> 
+          		<li><a href="MessiKarriere.html"> Karriere </a> </li>    
+          		<li><a href="MessiRonaldo.html"> Messi|Ronaldo </a></li>
+          		<li ><a id="active" href="MessiForum.html"> Forum </a></li> 
+				<li><a href="UeberUns.html"> Über uns </a></li>
+               <li><a href="game.html"> Game </a></li>
+     	</ul>
+      </nav>
+
+	  
+       
+        </header>
+             
+        <main>
+		<div><img src="img/MessiFinger.jpg" alt="Messi feiert" height="100%" width="100%"> </div>
+            
+		<div id="MessiBereit2"><figure><img src="img/LeoMessiBall1.jpg" alt="Lionel Messi im Trikot von Barcelona" height="100%" width="100%"></figure>
+		<figure><img src="img/LeoMessiNational1.jpg" alt="Lionel Messi im nationalen Trikot" height="100%" width="100%"></figure>
+            </div>
+		
+       <article> 
+	   <h2>Deine Meinung zu Messi und/oder zu unserem Blog</h2>
+		<form action="Email.php" method="post">
+				<fieldset>
+					<legend>Persönliche Daten</legend>
+					<label for="pseudo">Pseudo</label>
+					<input type="text" id="pseudo">
+					<label for="alter">Alter</label>
+					<input type="text" id="alter">
+					<label for="mail">E-Mail</label>
+					<input type="email" id="mail">
+				</fieldset>
+				
+				<fieldset>
+					<legend>Wohnort</legend>
+					<input type="text" list="land">
+					<datalist id="land">
+						<option>Deutschland</option>
+						<option>Österreich</option>
+						<option>Schweiz</option>
+					</datalist>
+				</fieldset> 
+				
+				<fieldset>
+					<legend>Geschlecht</legend>
+					<label for="m">männlich</label>
+					<input type="radio" name="gender" id="m">
+					<label for="w">weiblich</label>
+					<input type="radio"	name="gender" id="w">
+				</fieldset>
+				
+				<fieldset>
+					<legend>Wer ist deiner Meinung nach der Beste?</legend>
+					<label for="m10">L. Messi</label>
+					<input type="checkbox" id="m10">
+					<label for="cr7">C. Ronaldo</label> 
+					<input type="checkbox" id="cr7">
+					<label for="equality">Unentschieden</label>
+					<input type="checkbox" id="equality">
+				</fieldset>
+				
+				<fieldset>
+					<legend>Deine Lieblingsvereine in Europa</legend>
+					<select multiple>
+						<optgroup label="Premier League">
+							<option>Arsenal</option> 
+							<option>Chelsea</option>
+							<option>Liverpool</option>
+							<option>Manchester City</option>
+							<option>Manchester United</option> 
+							<option>Tottenham Hotspur</option>
+						</optgroup>
+						<optgroup label="Serie A">
+							<option>Inter</option>
+							<option>Juventus</option>
+							<option>Lazio</option> 
+							<option>Roma</option>
+							<option>SSC Napoli</option>
+						</optgroup>
+						<optgroup label="La Liga">
+							<option>Athletic Bilbao</option>
+							<option>Atletico Madrid</option>
+							<option>Barcelona</option>
+							<option>Real Madrid</option> 
+							<option>Sevilla</option>
+						</optgroup>
+						<optgroup label="Bundesliga">
+							<option>Bayer 04 Leverkusen</option>
+							<option>Bayern München</option>
+							<option>Borussia Dortmund</option> 
+							<option>Borussia Mönchengladbach</option>
+							<option>Schalke 04</option>
+                            <option>Hamburger SV
+                            </option>
+						</optgroup> 
+						<optgroup label="Ligue 1">
+							<option>Lyon</option>
+							<option>Marseille</option>
+							<option>Monaco</option>
+							<option>Paris Saint Germain</option>
+                            <option>Saint-Etienne</option>
+						</optgroup>
+					</select>
+				</fieldset>
+				
+				<label for="message">Nachricht</label>
+				<textarea id="message" maxlength="500" rows="10" cols="75"></textarea>
+			
+				<fieldset>
+					<legend>überprüfen und senden</legend>
+					<input type="submit">
+					<input type="reset">
+				</fieldset>
+		</form>
+          <p><small>ein Projekt von Studenten des internationalen Studiengangs Medieninformatik der HTW Berlin <br> Gervais Gamgmeni <br> Louis Ohlow</small></p>
+            </article>
+		  
+		  
+		  <div><img src="img/MessiFinger.jpg" alt="Messi feiert" height="100%" width="100%"></div>
+      </main>
+
+	
+	
+      <footer> 
+          <ul> 
+               <li><a href="#"><img src="img/instagram.png" alt="instagramLogo"> </a></li>
+               <li><a href="#"><img src="img/Snapchat.png" alt="SnapchatLogo"> </a></li>
+               <li><a href="#"><img src="img/Facebook.png" alt="FacebookLogo"> </a></li>
+               <li><a href="#"><img src="img/Google+.jpeg" alt="Google+Logo"> </a></li>
+			   <li><a href="#"><img src="img/Twitt.jpg" alt="TwitterLogo"> </a></li>
+               <li><a href="#"><img src="img/You.jpg" alt="YoutubeLogo"> </a></li>
+            </ul>
+         
+    </footer>
+    
+    </body>
+</html>
